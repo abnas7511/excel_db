@@ -23,7 +23,7 @@ This project is a simple Flask application that allows users to upload Excel fil
 
     ```bash
     git clone https://github.com/abnas7511/excel_db.git
-    cd your-repo
+    cd excel_db
     ```
 
 2. **Create a virtual environment and activate it:**
