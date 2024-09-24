@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>User Management App</h1>
+
+    <!-- Upload Form -->
+    <div>
+        <h2>Upload User Data (Excel)</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" name="file">
+            <button type="submit">Upload</button>
+        </form>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <!-- Add User Form -->
+    <div>
+        <h2>Add Single User</h2>
+        <form id="addUserForm">
+            <input type="text" id="user" placeholder="User Name" required><br>
+            <input type="email" id="emailid" placeholder="Email ID" required><br>
+            <input type="text" id="role" placeholder="Role" required><br>
+            <input type="text" id="application_mapped" placeholder="Application Mapped" required><br>
+            <input type="text" id="license_type" placeholder="License Type" required><br>
+            <button type="submit">Add User</button>
+        </form>
+        <p id="addUserStatus"></p>
+    </div>
+
+    <!-- Delete User Form -->
+    <div>
+        <h2>Delete User</h2>
+        <form id="deleteUserForm">
+            <input type="number" id="deleteUserId" placeholder="Enter User ID to delete" required><br>
+            <button type="submit">Delete User</button>
+        </form>
+        <p id="deleteStatus"></p>
+    </div>
+
+    <!-- Update User Form -->
+    <div>
+        <h2>Update User</h2>
+        <form id="updateUserForm">
+            <input type="number" id="updateUserId" placeholder="Enter User ID" required><br>
+            <input type="text" id="updateUserName" placeholder="User Name"><br>
+            <input type="email" id="updateEmailId" placeholder="Email ID"><br>
+            <input type="text" id="updateRole" placeholder="Role"><br>
+            <input type="text" id="updateApplicationMapped" placeholder="Application Mapped"><br>
+            <input type="text" id="updateLicenseType" placeholder="License Type"><br>
+            <button type="submit">Update User</button>
+        </form>
+        <p id="updateStatus"></p>
+    </div>
+
+    <!-- Fetch All Users -->
+    <div>
+        <h2>View All Users</h2>
+        <button id="fetchUsersButton">Get All Users</button>
+        <ul id="usersList"></ul>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
