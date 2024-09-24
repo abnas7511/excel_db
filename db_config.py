@@ -18,7 +18,7 @@ engine = create_engine(DATABASE_URL, echo=True, pool_size=5, max_overflow=10)
 Base = declarative_base()
 
 # FileInfo table definition
-class UsrerInfo(Base):
+class UserInfo(Base):
     __tablename__ = 'user_info'
     id = Column(Integer, primary_key=True)
     user = Column(String, nullable=False)
