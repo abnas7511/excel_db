@@ -1,7 +1,7 @@
 import pytest
 from io import BytesIO
-from src.app import app, session
-from src.db_config import UserInfo
+from app import app, session
+from db_config import UserInfo
 import pandas as pd
 
 @pytest.fixture
