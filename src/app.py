@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify, send_from_directory
 import pandas as pd
 from db_config import UserInfo, session
+import os
 
 app = Flask(__name__, instance_relative_config=True)
 
 
 @app.route('/')
 def index():
-    return send_from_directory('templates','index.html')
+    return send_from_directory('templates', 'index.html')
 
 #route for handling bulk entry
 @app.route('/upload', methods=['POST'])
